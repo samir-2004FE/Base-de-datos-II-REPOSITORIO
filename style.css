@@ -1,0 +1,164 @@
+/* ==========================
+   ANIMACIONES VIOLENTAS 🚀
+   ========================== */
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Efecto de pulso neon */
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff0078, 0 0 20px #ff0078, 0 0 30px #ff66a3;
+  }
+  50% {
+    text-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #66ffff;
+  }
+}
+
+/* Movimiento de fondo */
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  animation: bgMove 30s ease infinite;
+  background-size: 400% 400%;
+}
+
+/* Aplicando animaciones */
+h1, h2 {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.container {
+  animation: zoomIn 1.2s ease forwards;
+}
+
+h1 {
+  animation: neonPulse 2s infinite;
+}
+
+button, .btn {
+  animation: fadeIn 2s ease forwards;
+}
+
+/* ==========================
+   BASE GENERAL
+   ========================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(270deg, #1e1e2f, #2d2d44, #1e1e2f);
+  background-size: 400% 400%;
+  animation: bgMove 30s ease infinite;
+}
+
+/* Contenedor general */
+.container, .contenido {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(0,0,0,0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,255,255,0.3);
+  animation: zoomIn 1.2s ease forwards;
+}
+
+/* Encabezado */
+.encabezado {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  animation: neonPulse 2s infinite;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  color: #00f0ff;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Botones */
+.btn, button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff0078, #00f0ff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00f0ff;
+}
+
+/* Recursos */
+ul.recursos {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.recursos li {
+  margin: 0.5rem 0;
+}
+
+ul.recursos a {
+  color: #ff66a3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul.recursos a:hover {
+  color: #00f0ff;
+  text-decoration: underline;
+}
+
+/* Código estilo hacker */
+pre.codigo {
+  background: #111;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  box-shadow: 0 0 15px rgba(0,255,0,0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}

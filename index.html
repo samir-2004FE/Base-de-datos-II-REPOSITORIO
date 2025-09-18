@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tablero - Proyecto Base de Datos</title>
+    <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a1a, #4a0d0d);
+      padding: 20px;
+      box-shadow: 0 0 20px #ff0000;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .titulo-container h1 {
+      font-size: 2rem;
+      color: #ff1a1a;
+      text-shadow: 0 0 10px #ff0000, 0 0 20px #b30000;
+    }
+
+    .titulo-container p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    .autor {
+      font-weight: bold;
+      color: #ff4d4d;
+    }
+
+    .logo-nombre img {
+      width: 80px;
+      border-radius: 10px;
+      border: 2px solid #ff1a1a;
+      box-shadow: 0 0 15px #ff0000;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #ff1a1a;
+      text-transform: uppercase;
+      border-bottom: 2px solid #ff1a1a;
+      display: inline-block;
+    }
+
+    .lista-semanas {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .lista-semanas li a {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #ff1a1a;
+      border-radius: 10px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #b30000;
+    }
+
+    .lista-semanas li a:hover {
+      background: #ff1a1a;
+      color: #000;
+      box-shadow: 0 0 25px #ff0000;
+      transform: scale(1.05);
+    }
+
+    .info {
+      margin-top: 40px;
+      background: #1a1a1a;
+      padding: 20px;
+      border-left: 5px solid #ff1a1a;
+      box-shadow: 0 0 20px #ff0000;
+      border-radius: 10px;
+    }
+
+    .info p {
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff1a1a;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #ff0000;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #b30000;
+      color: #fff;
+      box-shadow: 0 0 25px #ff1a1a;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      background: #1a1a1a;
+      text-align: center;
+      color: #ff4d4d;
+      border-top: 2px solid #ff1a1a;
+      box-shadow: 0 0 15px #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="titulo-container">
+        <h1>Tablero de Actividades</h1>
+        <p>Curso de Base de Datos II</p>
+        <p class="autor">Autor: Samir Flores Estrella</p>
+      </div>
+      <div class="logo-nombre">
+        <img src="descarga.jpg" alt="Logo Universidad" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Índice de semanas -->
+    <section class="semanas container">
+      <h2>Listado de Semanas</h2>
+      <ul class="lista-semanas">
+        <li><a href="semana1.html">Semana 1</a></li>
+        <li><a href="semana2.html">Semana 2</a></li>
+        <li><a href="semana3.html">Semana 3</a></li>
+        <li><a href="semana4.html">Semana 4</a></li>
+        <li><a href="semana5.html">Semana 5</a></li>
+        <li><a href="semana6.html">Semana 6</a></li>
+        <li><a href="semana7.html">Semana 7</a></li>
+        <li><a href="semana8.html">Semana 8</a></li>
+        <li><a href="semana9.html">Semana 9</a></li>
+        <li><a href="semana10.html">Semana 10</a></li>
+        <li><a href="semana11.html">Semana 11</a></li>
+        <li><a href="semana12.html">Semana 12</a></li>
+        <li><a href="semana13.html">Semana 13</a></li>
+        <li><a href="semana14.html">Semana 14</a></li>
+        <li><a href="semana15.html">Semana 15</a></li>
+        <li><a href="semana16.html">Semana 16</a></li>
+      </ul>
+    </section>
+
+    <!-- Info general -->
+    <section class="info container">
+      <h2>Acerca del Repositorio</h2>
+      <p>Este espacio recopila semanalmente ejercicios, prácticas y material adicional del curso.</p>
+      <a href="" target="_blank" class="btn">Acceder al GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 | Proyecto de Base de Datos II | Samir Flores Estrella</p>
+    </div>
+  </footer>
+</body>
+</html>
